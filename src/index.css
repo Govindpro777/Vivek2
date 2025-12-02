@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 42 30% 97%;
+    --foreground: 150 20% 15%;
+
+    --card: 42 25% 95%;
+    --card-foreground: 150 20% 15%;
+
+    --popover: 42 30% 97%;
+    --popover-foreground: 150 20% 15%;
+
+    --primary: 145 35% 28%;
+    --primary-foreground: 42 30% 97%;
+
+    --secondary: 35 30% 85%;
+    --secondary-foreground: 150 20% 15%;
+
+    --muted: 35 20% 90%;
+    --muted-foreground: 150 10% 40%;
+
+    --accent: 38 70% 50%;
+    --accent-foreground: 150 20% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 145 35% 28%;
+
+    --radius: 0.5rem;
+
+    --hero-overlay: 150 30% 10%;
+    --section-alt: 145 15% 92%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 150 20% 8%;
+    --foreground: 42 30% 97%;
+
+    --card: 150 20% 12%;
+    --card-foreground: 42 30% 97%;
+
+    --popover: 150 20% 10%;
+    --popover-foreground: 42 30% 97%;
+
+    --primary: 145 40% 45%;
+    --primary-foreground: 150 20% 8%;
+
+    --secondary: 35 20% 20%;
+    --secondary-foreground: 42 30% 97%;
+
+    --muted: 150 15% 18%;
+    --muted-foreground: 35 15% 60%;
+
+    --accent: 38 70% 55%;
+    --accent-foreground: 150 20% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 150 15% 20%;
+    --input: 150 15% 20%;
+    --ring: 145 40% 45%;
+
+    --hero-overlay: 150 30% 5%;
+    --section-alt: 150 15% 12%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-hero {
+    @apply bg-accent text-accent-foreground font-semibold px-8 py-4 rounded-lg 
+           hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl
+           hover:-translate-y-0.5 uppercase tracking-wider text-sm;
+  }
+
+  .btn-outline-hero {
+    @apply border-2 border-primary-foreground/80 text-primary-foreground font-semibold 
+           px-8 py-4 rounded-lg hover:bg-primary-foreground hover:text-primary
+           transition-all duration-300 uppercase tracking-wider text-sm;
+  }
+
+  .section-padding {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .card-service {
+    @apply bg-card rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300
+           hover:-translate-y-1 border border-border/50;
+  }
+
+  .card-gallery {
+    @apply rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500
+           hover:-translate-y-2 cursor-pointer;
+  }
+
+  .nav-link {
+    @apply text-foreground/80 hover:text-primary transition-colors duration-200 font-medium;
+  }
+
+  .nav-link-active {
+    @apply text-primary font-semibold;
+  }
+
+  .heading-section {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4;
+  }
+
+  .heading-accent {
+    @apply text-primary;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--hero-overlay) / 0.85) 0%,
+      hsl(var(--hero-overlay) / 0.6) 50%,
+      hsl(var(--hero-overlay) / 0.75) 100%
+    );
+  }
+
+  .gradient-section {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--section-alt)) 0%,
+      hsl(var(--background)) 100%
+    );
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
