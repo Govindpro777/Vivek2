@@ -6,11 +6,11 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
-      
+
       {/* Overlay */}
       <div className="absolute inset-0 gradient-hero" />
 
@@ -30,12 +30,12 @@ const Hero = () => {
           {/* Headline */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-up" style={{ animationDelay: '0.2s' }}>
             Taking Your Outdoor Space to the{' '}
-            <span className="text-accent">Next Level</span>
+            <span className="text-accent">NX Level</span>
           </h1>
 
           {/* Sub-headline */}
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 leading-relaxed animate-fade-up" style={{ animationDelay: '0.3s' }}>
-            Premium landscape design, hardscape, turf, and outdoor living builds in Henderson & Las Vegas.
+            For over twenty five years, NX Level Landscaping has specialized in personal service while creating their customers dreams. As a native of the Las Vegas valley, owners Craig & Braxton take pride and ownership in every job their company per-forms. In fact, they are personally involved with each and every job to guarantee customers are 100% satisfied.
           </p>
 
           {/* CTAs */}

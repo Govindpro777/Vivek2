@@ -23,7 +23,7 @@ const Navbar = () => {
       {/* Top Bar */}
       <div className="bg-primary text-primary-foreground py-2 px-4 hidden md:block">
         <div className="container-custom flex justify-between items-center text-sm">
-          <span className="font-medium">Taking Your Outdoor Space to the Next Level</span>
+          <span className="font-medium">Taking Your Outdoor Space to the NX Level</span>
           <div className="flex items-center gap-6">
             <a href="tel:+17025551234" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone size={14} />
@@ -56,14 +56,14 @@ const Navbar = () => {
             <Link to="/" className={`nav-link ${isActive('/') ? 'nav-link-active' : ''}`}>
               Home
             </Link>
-            
+
             {/* Services Dropdown */}
             <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
               <button className={`nav-link flex items-center gap-1 ${isActive('/services') ? 'nav-link-active' : ''}`}>
                 Services
                 <ChevronDown size={16} className={`transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
               </button>
-              
+
               {servicesOpen && (
                 <div className="absolute top-full left-0 pt-2 w-64 animate-fade-in">
                   <div className="bg-card rounded-xl shadow-xl border border-border p-2">

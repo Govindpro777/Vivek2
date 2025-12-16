@@ -1,5 +1,19 @@
+// import { Link } from 'react-router-dom';
+// import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Facebook,
+  Instagram,
+  Youtube,
+  IdCard,
+  ShieldCheck,
+  FileBadge2,
+} from 'lucide-react';
+
 
 const Footer = () => {
   return (
@@ -35,7 +49,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h4 className="font-display text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li><Link to="/" className="text-primary-foreground/80 hover:text-accent transition-colors">Home</Link></li>
@@ -44,7 +58,7 @@ const Footer = () => {
               <li><Link to="/about" className="text-primary-foreground/80 hover:text-accent transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors">Contact</Link></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Services */}
           <div>
@@ -71,8 +85,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-accent flex-shrink-0" />
-                <a href="tel:+17025551234" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  (702) 555-1234
+                <a href="tel:+7023486380" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  (702)-348-6380
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -87,6 +101,37 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          <div>
+            <h4 className="font-display text-lg font-semibold mb-6">NX Level License</h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <IdCard size={20} className="text-accent mt-1 flex-shrink-0" />
+                <span className="text-primary-foreground/80">
+                  License 0077586<br />
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FileBadge2 size={20} className="text-accent flex-shrink-0" />
+                <span className="text-primary-foreground/80">
+                  Issued By NVSCB
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <MapPin size={20} className="text-accent flex-shrink-0" />
+                <span className="text-primary-foreground/80">
+                  Type C10 – Landscape Contractor
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <ShieldCheck size={20} className="text-accent flex-shrink-0" />
+                <span className="text-primary-foreground/80">
+                  Verified by Yelp on 2025-10-08
+                </span>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
 

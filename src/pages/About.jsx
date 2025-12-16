@@ -73,21 +73,21 @@ const About = () => {
               </span>
               <h2 className="heading-section">
                 Taking Landscapes to the{' '}
-                <span className="heading-accent">Next Level</span>
+                <span className="heading-accent">NX Level</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                 <p>
-                  NX Level Landscaping takes every project to the next level with expert landscape design, 
-                  high-end paver and hardscape work, turf installation, outdoor lighting, patio covers, 
+                  NX Level Landscaping takes every project to the next level with expert landscape design,
+                  high-end paver and hardscape work, turf installation, outdoor lighting, patio covers,
                   trellises, steps, walkways, outdoor kitchens, fireplaces, and complete backyard transformations.
                 </p>
                 <p>
-                  Based in Henderson, Nevada, we've been serving the Las Vegas Valley for over 15 years, 
+                  Based in Henderson, Nevada, we've been serving the Las Vegas Valley for over 15 years,
                   building a reputation for quality craftsmanship, innovative design, and exceptional customer service.
                 </p>
                 <p>
-                  Our team of skilled professionals is passionate about creating outdoor spaces that not only 
-                  look stunning but function perfectly for your lifestyle. From intimate patios to expansive 
+                  Our team of skilled professionals is passionate about creating outdoor spaces that not only
+                  look stunning but function perfectly for your lifestyle. From intimate patios to expansive
                   entertainment areas, we bring your vision to life.
                 </p>
               </div>
