@@ -27,7 +27,7 @@ const ThankYou = () => {
 	};
 
 	const handleEmail = () => {
-		window.location.href = 'mailto:info@nxlevellandscaping.com';
+		window.location.href = 'mailto:quotes@nxlevellandscaping.com';
 	};
 
 	if (loading) {

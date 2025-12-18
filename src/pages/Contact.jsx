@@ -223,7 +223,7 @@ const Contact = () => {
             {/* Contact Info & Map (unchanged) */}
             <div className="space-y-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="bg-card rounded-xl p-6 border border-border">
+                {/* <div className="bg-card rounded-xl p-6 border border-border">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <MapPin size={24} className="text-primary" />
                   </div>
@@ -232,7 +232,7 @@ const Contact = () => {
                     916 Santa Helena<br />
                     Henderson, NV 89002
                   </p>
-                </div>
+                </div> */}
 
                 <div className="bg-card rounded-xl p-6 border border-border">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
@@ -240,10 +240,10 @@ const Contact = () => {
                   </div>
                   <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                   <a
-                    href="tel:+17025551234"
+                    href="tel:+17023486380"
                     className="text-muted-foreground text-sm hover:text-primary transition-colors"
                   >
-                    (702) 555-1234
+                    (702)-348-6380
                   </a>
                 </div>
 
@@ -253,10 +253,10 @@ const Contact = () => {
                   </div>
                   <h3 className="font-semibold text-foreground mb-1">Email</h3>
                   <a
-                    href="mailto:info@nxlevellandscaping.com"
+                    href="mailto:quotes@nxlevellandscaping.com"
                     className="text-muted-foreground text-sm hover:text-primary transition-colors"
                   >
-                    info@nxlevellandscaping.com
+                    quotes@nxlevellandscaping.com
                   </a>
                 </div>
 

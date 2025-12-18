@@ -31,7 +31,7 @@ const CTASection = () => {
             className="btn-outline-hero inline-flex items-center justify-center gap-2"
           >
             <Phone size={20} />
-            Call (702) 555-1234
+            Call (702)-348-6380
           </a>
         </div>
       </div>

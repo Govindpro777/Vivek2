@@ -62,13 +62,13 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg font-semibold mb-6">Contact Us</h4>
             <ul className="space-y-4">
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-accent mt-1 flex-shrink-0" />
                 <span className="text-primary-foreground/80">
                   916 Santa Helena<br />
                   Henderson, NV 89002
                 </span>
-              </li>
+              </li> */}
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-accent flex-shrink-0" />
                 <a href="tel:+7023486380" className="text-primary-foreground/80 hover:text-accent transition-colors">
@@ -125,7 +125,7 @@ const Footer = () => {
       <div className="border-t border-primary-foreground/20 py-6 px-4">
         <div className="container-custom flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
           <p>© {new Date().getFullYear()} NX Level Landscaping. All rights reserved.</p>
-          <p>Service Area: Henderson + Las Vegas Valley</p>
+          {/* <p>Service Area: Henderson + Las Vegas Valley</p> */}
         </div>
       </div>
     </footer>
