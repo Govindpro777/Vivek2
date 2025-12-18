@@ -48,20 +48,22 @@ const ThankYou = () => {
 				/>
 				<div className="absolute inset-0 gradient-hero" />
 				<div className="relative z-10 container-custom px-4 text-center">
-					<div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
+					{/* <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
 						<CheckCircle size={20} />
 						<span className="font-semibold uppercase tracking-wider text-sm">Request Received</span>
-					</div>
+					</div> */}
 
 					{/* EXACT TITLE SPECIFIED */}
-					<h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
-						Thank you, your request has been received.
+					<h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-8 mt-24">
+						Thank you
 					</h1>
 
-					{/* EXACT BODY SPECIFIED */}
-					<p className="text-primary-foreground/80 text-lg md:text-xl max-w-2xl mx-auto">
-						Our team will contact you shortly.
+					<p className="text-primary-foreground/80 text-lg md:text-xl max-w-2xl mx-auto mb-4">
+						Your request has been received, Our team will contact you shortly.
 					</p>
+
+
+
 				</div>
 			</section>
 
