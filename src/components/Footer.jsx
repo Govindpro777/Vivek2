@@ -36,7 +36,7 @@ const Footer = () => {
               Taking your outdoor space to the next level with premium landscape design, hardscape, and outdoor living solutions in Henderson & Las Vegas.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61585199820177" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
                 <Facebook size={20} />
               </a>
               <a href="#" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
@@ -48,19 +48,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
-          {/* <div>
-            <h4 className="font-display text-lg font-semibold mb-6">Quick Links</h4>
-            <ul className="space-y-3">
-              <li><Link to="/" className="text-primary-foreground/80 hover:text-accent transition-colors">Home</Link></li>
-              <li><Link to="/services" className="text-primary-foreground/80 hover:text-accent transition-colors">Services</Link></li>
-              <li><Link to="/gallery" className="text-primary-foreground/80 hover:text-accent transition-colors">Gallery</Link></li>
-              <li><Link to="/about" className="text-primary-foreground/80 hover:text-accent transition-colors">About Us</Link></li>
-              <li><Link to="/contact" className="text-primary-foreground/80 hover:text-accent transition-colors">Contact</Link></li>
-            </ul>
-          </div> */}
 
-          {/* Services */}
           <div>
             <h4 className="font-display text-lg font-semibold mb-6">Our Services</h4>
             <ul className="space-y-3">
@@ -91,8 +79,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={20} className="text-accent flex-shrink-0" />
-                <a href="mailto:info@nxlevellandscaping.com" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  info@nxlevellandscaping.com
+                <a href="mailto:quotes@nxlevellandscaping.com" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                  quotes@nxlevellandscaping.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
