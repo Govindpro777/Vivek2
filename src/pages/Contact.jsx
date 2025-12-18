@@ -311,7 +311,7 @@ const projectTypes = [
   'Other',
 ];
 
-const TYPEFORM_ID = '01KCR4GPXTN5G8Z5ZGATEFHWHX';
+const TYPEFORM_ID = '01KCSFN1S4BKG84BF68ZA3Q0E8';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -416,7 +416,7 @@ const Contact = () => {
               </div>
 
               {/* Native form - Secondary option */}
-              <div className="pt-8 border-t border-border">
+              {/* <div className="pt-8 border-t border-border">
                 <p className="text-muted-foreground text-sm mb-6 text-center">
                   Or fill out this form directly:
                 </p>
@@ -526,7 +526,7 @@ const Contact = () => {
                     )}
                   </button>
                 </form>
-              </div>
+              </div> */}
             </div>
 
             {/* Contact Info & Map (unchanged) */}
