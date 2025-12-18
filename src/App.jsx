@@ -20,6 +20,7 @@ import PatioCovers from "./pages/services/PatioCovers";
 import TrellisesArbors from "./pages/services/TrellisesArbors";
 import StepsWalkways from "./pages/services/StepsWalkways";
 import OutdoorKitchens from "./pages/services/OutdoorKitchens";
+import ThankYou from "./pages/ThankYou";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/thank-you" element={<ThankYou />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

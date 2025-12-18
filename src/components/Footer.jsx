@@ -1,5 +1,3 @@
-// import { Link } from 'react-router-dom';
-// import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {
   MapPin,
