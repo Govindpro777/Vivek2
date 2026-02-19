@@ -89,7 +89,7 @@ const Navbar = () => {
               )}
             </div>
 
-            <Link to="/gallery" className={`nav-link ${isActive('/gallery') ? 'nav-link-active' : ''}`}>
+            <Link to="/projects" className={`nav-link ${isActive('/projects') ? 'nav-link-active' : ''}`}>
               Gallery
             </Link>
             <Link to="/about" className={`nav-link ${isActive('/about') ? 'nav-link-active' : ''}`}>

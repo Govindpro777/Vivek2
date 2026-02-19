@@ -21,6 +21,9 @@ import TrellisesArbors from "./pages/services/TrellisesArbors";
 import StepsWalkways from "./pages/services/StepsWalkways";
 import OutdoorKitchens from "./pages/services/OutdoorKitchens";
 import ThankYou from "./pages/ThankYou";
+import Projects from "./pages/Projects";
+import CategoryGallery from "./pages/CategoryGallery";
+import ProjectDetail from "./pages/ProjectDetail";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +49,9 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/project/:slug" element={<ProjectDetail />} />
+            <Route path="/project/:slug/:categorySlug" element={<CategoryGallery />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
