@@ -124,7 +124,7 @@ const Navbar = () => {
               <Link to="/services" onClick={() => setIsOpen(false)} className="nav-link py-3 border-b border-border">
                 Services
               </Link>
-              <Link to="/gallery" onClick={() => setIsOpen(false)} className="nav-link py-3 border-b border-border">
+              <Link to="/projects" onClick={() => setIsOpen(false)} className="nav-link py-3 border-b border-border">
                 Gallery
               </Link>
               <Link to="/about" onClick={() => setIsOpen(false)} className="nav-link py-3 border-b border-border">
