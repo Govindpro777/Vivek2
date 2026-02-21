@@ -1,10 +1,10 @@
-import Project1 from "../assets/Day1/project1.jpeg"
+// import Project1 from "../assets/Day1/project1.jpeg"
 
 export const projectsData = [
   {
     slug: "project-1",
     name: "Project 1 - fall 2024",
-    coverImage: Project1,
+    coverImage: "/assets/Day1/project1.jpeg",
     categories: [
       {
         slug: "pavers-hardscape",
@@ -65,7 +65,7 @@ export const projectsData = [
   {
     slug: "project-2",
     name: "Project 2 - Fall 2022",
-    coverImage: Project1,
+    coverImage: "/assets/Day1/project1.jpeg",
        categories: [
       {
         slug: "pavers-hardscape",
