@@ -149,25 +149,119 @@ const Navbar = () => {
         {isOpen && (
           <div className="lg:hidden bg-card border-t border-border animate-fade-in">
             <div className="container-custom py-4 px-4 flex flex-col gap-2">
-              <Link to="/" onClick={() => setIsOpen(false)} className="nav-link py-3 border-b border-border">
+
+              <Link
+                to="/"
+                onClick={() => setIsOpen(false)}
+                className="nav-link py-3 border-b border-border"
+              >
                 Home
               </Link>
-              <Link to="/services" onClick={() => setIsOpen(false)} className="nav-link py-3 border-b border-border">
-                Services
-              </Link>
-              <Link to="/service-gallery" onClick={() => setIsOpen(false)} className="nav-link py-3 border-b border-border">
-                Service Gallery
-              </Link>
-              <Link to="/past-work" onClick={() => setIsOpen(false)} className="nav-link py-3 border-b border-border">
-                Past Work
-              </Link>
-              <Link to="/about" onClick={() => setIsOpen(false)} className="nav-link py-3 border-b border-border">
+
+              {/* Mobile Services Dropdown */}
+              <div className="border-b border-border">
+                <button
+                  onClick={() => setServicesOpen(!servicesOpen)}
+                  className="w-full flex justify-between items-center nav-link py-3"
+                >
+                  Services
+                  <ChevronDown
+                    size={18}
+                    className={`transition-transform ${servicesOpen ? 'rotate-180' : ''}`}
+                  />
+                </button>
+
+                {servicesOpen && (
+                  <div className="pl-4 pb-2 flex flex-col">
+                    {services.map((service) => (
+                      <Link
+                        key={service.name}
+                        to={service.href}
+                        onClick={() => {
+                          setIsOpen(false);
+                          setServicesOpen(false);
+                        }}
+                        className="py-2 text-sm text-foreground/80 hover:text-primary"
+                      >
+                        {service.name}
+                      </Link>
+                    ))}
+
+                    <Link
+                      to="/services"
+                      onClick={() => {
+                        setIsOpen(false);
+                        setServicesOpen(false);
+                      }}
+                      className="py-2 text-sm font-medium text-primary"
+                    >
+                      View All Services →
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Mobile Gallery Dropdown */}
+              <div className="border-b border-border">
+                <button
+                  onClick={() => setGalleryOpen(!galleryOpen)}
+                  className="w-full flex justify-between items-center nav-link py-3"
+                >
+                  Gallery
+                  <ChevronDown
+                    size={18}
+                    className={`transition-transform ${galleryOpen ? 'rotate-180' : ''}`}
+                  />
+                </button>
+
+                {galleryOpen && (
+                  <div className="pl-4 pb-2 flex flex-col">
+                    <Link
+                      to="/service-gallery"
+                      onClick={() => {
+                        setIsOpen(false);
+                        setGalleryOpen(false);
+                      }}
+                      className="py-2 text-sm text-foreground/80 hover:text-primary"
+                    >
+                      Service Gallery
+                    </Link>
+
+                    <Link
+                      to="/past-work"
+                      onClick={() => {
+                        setIsOpen(false);
+                        setGalleryOpen(false);
+                      }}
+                      className="py-2 text-sm text-foreground/80 hover:text-primary"
+                    >
+                      Past Work
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <Link
+                to="/about"
+                onClick={() => setIsOpen(false)}
+                className="nav-link py-3 border-b border-border"
+              >
                 About
               </Link>
-              <Link to="/contact" onClick={() => setIsOpen(false)} className="nav-link py-3 border-b border-border">
+
+              <Link
+                to="/contact"
+                onClick={() => setIsOpen(false)}
+                className="nav-link py-3 border-b border-border"
+              >
                 Contact
               </Link>
-              <Link to="/contact" onClick={() => setIsOpen(false)} className="btn-hero text-center mt-4">
+
+              <Link
+                to="/contact"
+                onClick={() => setIsOpen(false)}
+                className="btn-hero text-center mt-4"
+              >
                 Get a Free Quote
               </Link>
             </div>

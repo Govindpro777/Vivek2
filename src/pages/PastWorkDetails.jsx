@@ -8,7 +8,7 @@ export default function PastWorkDetails() {
   if (!project) return <div className="pt-32 text-center">Project not found</div>
 
   return (
-    <section className="section-padding pt-32">
+    <section className="section-padding pt-36">
       <div className="container-custom">
         <h1 className="font-display text-4xl font-bold mb-10 text-center">
           {project.name}

@@ -1,18 +1,18 @@
-// src/pages/ProjectDetail.jsx
 import { useParams, Link } from 'react-router-dom';
-import { projectsData } from './projectsData';
+import { categoriesData } from './categoriesData'; // adjust path
 import { ArrowLeft } from 'lucide-react';
 
-export default function ProjectDetail() {
-  const { slug } = useParams();
-  const project = projectsData.find(p => p.slug === slug);
+export default function CategoryGallery() {
+  const { categorySlug } = useParams();
 
-  if (!project) {
+  const category = categoriesData.find(c => c.slug === categorySlug);
+
+  if (!category) {
     return (
       <div className="section-padding text-center">
-        <h2 className="text-3xl font-bold">Project not found</h2>
+        <h2 className="text-3xl font-bold">Category not found</h2>
         <Link to="/service-gallery" className="text-accent hover:underline mt-4 inline-block">
-          ← Back to Projects
+          ← Back to Gallery
         </Link>
       </div>
     );
@@ -21,41 +21,40 @@ export default function ProjectDetail() {
   return (
     <section className="section-padding bg-background">
       <div className="container-custom mt-16">
-        <div className="mb-12">
-          <Link
-            to="/service-gallery"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors mb-6"
-          >
-            <ArrowLeft size={18} /> Back to All Projects
-          </Link>
-          <h1 className="font-display text-4xl md:text-5xl font-bold">{project.name}</h1>
-          <p className="text-xl text-muted-foreground mt-4">Select a category to explore</p>
+        <div className="mb-10">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <Link
+                to="/service-gallery"
+                className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors mb-2"
+              >
+                <ArrowLeft size={18} /> Back to All Categories
+              </Link>
+              <h1 className="font-display text-3xl md:text-4xl font-bold">
+                {category.name}
+              </h1>
+            </div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {project.categories.map(cat => (
-            <Link
-              key={cat.slug}
-              to={`/project/${slug}/${cat.slug}`}
-              className="group relative h-[340px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {category.images.map((url, index) => (
+            <div
+              key={index}
+              className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-all duration-500"
             >
               <img
-                src={cat.cover}
-                alt={cat.name}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                src={url}
+                alt={`${category.name} detail ${index + 1}`}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <span className="bg-accent/90 backdrop-blur-sm text-accent-foreground px-8 py-4 rounded-full text-lg font-semibold shadow-lg">
-                  View {cat.name}
-                </span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <p className="text-white font-medium">
+                  Image {index + 1}
+                </p>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-8">
-                <h3 className="font-display text-2xl md:text-3xl font-bold text-white">
-                  {cat.name}
-                </h3>
-              </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

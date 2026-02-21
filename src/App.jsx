@@ -22,7 +22,6 @@ import StepsWalkways from "./pages/services/StepsWalkways";
 import OutdoorKitchens from "./pages/services/OutdoorKitchens";
 import ThankYou from "./pages/ThankYou";
 import Projects from "./pages/Projects";
-import CategoryGallery from "./pages/CategoryGallery";
 import ProjectDetail from "./pages/ProjectDetail";
 import PastWork from "./pages/PastWork";
 import PastWorkDetails from "./pages/PastWorkDetails";
@@ -52,8 +51,8 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/service-gallery" element={<Projects />} />
-            <Route path="/project/:slug" element={<ProjectDetail />} />
-            <Route path="/project/:slug/:categorySlug" element={<CategoryGallery />} />
+            <Route path="/category/:categorySlug" element={<ProjectDetail />} />
+            {/* <Route path="/project/:slug/:categorySlug" element={<CategoryGallery />} /> */}
             <Route path="/past-work" element={<PastWork />} />
             <Route path="/past-work/:slug" element={<PastWorkDetails />} />
             <Route path="*" element={<NotFound />} />
