@@ -1,10 +1,10 @@
-import Project1 from "@/assets/DAY1/project1.jpeg"
-import Project2 from "@/assets/DAY2/project2.jpeg"
-import Project3 from "@/assets/DAY3/project3.jpeg"
-import Project4 from "@/assets/DAY4/project4.jpeg"
-import Project5 from "@/assets/DAY5/project5.jpeg"
-import Project6 from "@/assets/DAY6/project6.jpeg"
-import Project7 from "@/assets/DAY7/project7.jpeg"
+import Project1 from "@/assets/Day1/project1.jpeg"
+import Project2 from "@/assets/Day2/project2.jpeg"
+import Project3 from "@/assets/Day3/project3.jpeg"
+import Project4 from "@/assets/Day4/project4.jpeg"
+import Project5 from "@/assets/Day5/project5.jpeg"
+import Project6 from "@/assets/Day6/project6.jpeg"
+import Project7 from "@/assets/Day7/project7.jpeg"
 
 /* Auto import all images inside each DAY folder */
 const day1Images = Object.values(
@@ -12,27 +12,27 @@ const day1Images = Object.values(
 ).map((img) => img.default)
 
 const day2Images = Object.values(
-  import.meta.glob("@/assets/DAY2/*.jpeg", { eager: true })
+  import.meta.glob("@/assets/Day2/*.jpeg", { eager: true })
 ).map((img) => img.default)
 
 const day3Images = Object.values(
-  import.meta.glob("@/assets/DAY3/*.jpeg", { eager: true })
+  import.meta.glob("@/assets/Day3/*.jpeg", { eager: true })
 ).map((img) => img.default)
 
 const day4Images = Object.values(
-  import.meta.glob("@/assets/DAY4/*.jpeg", { eager: true })
+  import.meta.glob("@/assets/Day4/*.jpeg", { eager: true })
 ).map((img) => img.default)
 
 const day5Images = Object.values(
-  import.meta.glob("@/assets/DAY5/*.jpeg", { eager: true })
+  import.meta.glob("@/assets/Day5/*.jpeg", { eager: true })
 ).map((img) => img.default)
 
 const day6Images = Object.values(
-  import.meta.glob("@/assets/DAY6/*.jpeg", { eager: true })
+  import.meta.glob("@/assets/Day6/*.jpeg", { eager: true })
 ).map((img) => img.default)
 
 const day7Images = Object.values(
-  import.meta.glob("@/assets/DAY7/*.jpeg", { eager: true })
+  import.meta.glob("@/assets/Day7/*.jpeg", { eager: true })
 ).map((img) => img.default)
 
 export const pastWorkData = [
