@@ -24,6 +24,8 @@ import ThankYou from "./pages/ThankYou";
 import Projects from "./pages/Projects";
 import CategoryGallery from "./pages/CategoryGallery";
 import ProjectDetail from "./pages/ProjectDetail";
+import PastWork from "./pages/PastWork";
+import PastWorkDetails from "./pages/PastWorkDetails";
 
 const queryClient = new QueryClient();
 
@@ -49,9 +51,11 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/thank-you" element={<ThankYou />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/service-gallery" element={<Projects />} />
             <Route path="/project/:slug" element={<ProjectDetail />} />
             <Route path="/project/:slug/:categorySlug" element={<CategoryGallery />} />
+            <Route path="/past-work" element={<PastWork />} />
+            <Route path="/past-work/:slug" element={<PastWorkDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

@@ -44,7 +44,7 @@ const Hero = () => {
               Get a Free Quote
               <ArrowRight size={20} />
             </Link>
-            <Link to="/projects" className="btn-outline-hero inline-flex items-center justify-center">
+            <Link to="/service-gallery" className="btn-outline-hero inline-flex items-center justify-center">
               View Our Work
             </Link>
           </div>

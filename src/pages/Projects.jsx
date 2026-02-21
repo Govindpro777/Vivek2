@@ -16,7 +16,7 @@ export default function Projects() {
 						Our Work
 					</span>
 					<h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
-						Featured Projects
+						Service Gallery
 					</h1>
 					<p className="text-primary-foreground/80 text-lg md:text-xl max-w-2xl mx-auto">
 						Explore our handcrafted outdoor transformations
@@ -31,12 +31,12 @@ export default function Projects() {
 							<Link
 								key={project.slug}
 								to={`/project/${project.slug}`}
-								className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 h-[380px] md:h-[440px]"
+								className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500"
 							>
 								<img
 									src={project.coverImage}
 									alt={project.name}
-									className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+									className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 								<div className="absolute bottom-0 left-0 right-0 p-8">

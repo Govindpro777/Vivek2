@@ -11,7 +11,7 @@ export default function ProjectDetail() {
     return (
       <div className="section-padding text-center">
         <h2 className="text-3xl font-bold">Project not found</h2>
-        <Link to="/projects" className="text-accent hover:underline mt-4 inline-block">
+        <Link to="/service-gallery" className="text-accent hover:underline mt-4 inline-block">
           ← Back to Projects
         </Link>
       </div>
@@ -23,7 +23,7 @@ export default function ProjectDetail() {
       <div className="container-custom mt-16">
         <div className="mb-12">
           <Link
-            to="/projects"
+            to="/service-gallery"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors mb-6"
           >
             <ArrowLeft size={18} /> Back to All Projects

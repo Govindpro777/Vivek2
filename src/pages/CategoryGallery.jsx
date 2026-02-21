@@ -28,7 +28,7 @@ export default function CategoryGallery() {
 							</h1>
 						</div>
 						<Link
-							to="/projects"
+							to="/service-gallery"
 							className="text-accent hover:underline text-sm"
 						>
 							← All Projects

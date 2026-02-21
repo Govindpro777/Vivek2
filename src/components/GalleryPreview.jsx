@@ -140,7 +140,7 @@ const GalleryPreview = () => {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <Link to="/projects" className="btn-hero inline-flex items-center gap-2 group">
+          <Link to="/service-gallery" className="btn-hero inline-flex items-center gap-2 group">
             View Full Gallery
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </Link>
