@@ -39,7 +39,7 @@ export default function ServiceGallery() {
 									className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
 								/>
 								<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-								<div className="absolute bottom-0 left-0 right-0 p-8">
+								<div className="absolute bottom-0 left-0 right-0 p-4">
 									<h3 className="font-display text-3xl font-bold text-white mb-2">
 										{category.name}
 									</h3>

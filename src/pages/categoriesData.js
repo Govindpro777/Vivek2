@@ -3,10 +3,10 @@ export const categoriesData = [
   {
     slug: "pavers-hardscape",
     name: "Pavers & Hardscape",
-    cover: "/assets/Day1/project1.jpeg",
+    cover: "/assets/Day5/13.jpeg",
     images: [
       "/assets/gallery-pavers-CI-NuO7W.jpg",
-      "/assets/Day1/project1.jpeg",
+      "/assets/Day5/13.jpeg",
       "/assets/Day1/1.jpeg",
       "/assets/Day1/2.jpeg",
       "/assets/Day1/3.jpeg",
@@ -36,9 +36,9 @@ export const categoriesData = [
   {
     slug: "turf",
     name: "Turf",
-    cover: "/assets/Day1/project1.jpeg",
+    cover: "/assets/Day1/18.jpeg",
     images: [
-      "/assets/gallery-turf-CL2sY2V3.jpg",
+      "/assets/Day1/18.jpeg",
       "/assets/Day2/project2.jpeg",
       "/assets/Day2/1.jpeg",
       "/assets/Day2/2.jpeg",
@@ -94,9 +94,9 @@ export const categoriesData = [
   {
     slug: "outdoor-features",
     name: "Outdoor Features",
-    cover: "/assets/Day1/project1.jpeg",
+    cover: "/assets/Day3/1.jpeg",
     images: [
-      "/assets/Day1/project1.jpeg",
+      "/assets/Day3/1.jpeg",
       "/assets/Day5/project5.jpeg",
       "/assets/Day5/1.jpeg",
       "/assets/Day5/2.jpeg",
@@ -122,11 +122,11 @@ export const categoriesData = [
     ]
   },
   {
-    slug: "patio-cover",
-    name: "Patio Covers",
-    cover: "/assets/Day1/project1.jpeg",
+    slug: "top-view",
+    name: "Top view",
+    cover: "/assets/Day1/1.jpeg",
     images: [
-      "/assets/Day1/project1.jpeg",
+      "/assets/Day1/1.jpeg",
       "/assets/Day6/project6.jpeg",
       "/assets/Day6/1.jpeg",
       "/assets/Day6/2.jpeg",
@@ -147,40 +147,4 @@ export const categoriesData = [
       "/assets/Day6/17.jpeg",
     ]
   },
-  {
-    slug: "seating-fire-features",
-    name: "Seating & Fire Features",
-    cover: "/assets/Day7/project7.jpeg",
-    images: [
-      "/assets/Day7/project7.jpeg",
-      "/assets/Day7/1.jpeg",
-      "/assets/Day7/2.jpeg",
-      "/assets/Day7/3.jpeg",
-      "/assets/Day7/4.jpeg",
-      "/assets/Day7/5.jpeg",
-      "/assets/Day7/6.jpeg",
-      "/assets/Day7/7.jpeg",
-      "/assets/Day7/8.jpeg",
-      "/assets/Day7/9.jpeg",
-      "/assets/Day7/10.jpeg",
-      "/assets/Day7/11.jpeg",
-      "/assets/Day7/12.jpeg",
-      "/assets/Day7/13.jpeg",
-      "/assets/Day7/14.jpeg",
-      "/assets/Day7/15.jpeg",
-      "/assets/Day7/16.jpeg",
-      "/assets/Day7/17.jpeg",
-      "/assets/Day7/18.jpeg",
-      "/assets/Day7/19.jpeg",
-      "/assets/Day7/20.jpeg",
-      "/assets/Day7/21.jpeg",
-      "/assets/Day7/22.jpeg",
-      "/assets/Day7/23.jpeg",
-      "/assets/Day7/24.jpeg",
-      "/assets/Day7/25.jpeg",
-      "/assets/Day7/26.jpeg",
-      "/assets/Day7/27.jpeg",
-      "/assets/Day7/28.jpeg",
-    ]
-  }
 ];
