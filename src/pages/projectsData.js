@@ -1,5 +1,4 @@
-// src/data/projectsData.js
-import Project1 from "../../src/assets/DAY1/DJI_20251215134903_0010_D.jpg"
+import Project1 from "@/assets/DAY1/project1.jpeg"
 
 export const projectsData = [
   {
@@ -50,8 +49,8 @@ export const projectsData = [
         images: Array(8).fill("https://images.unsplash.com/photo-1598928508446-7d1a19e5e8e2?w=900")
       },
       {
-        slug: "firepit",
-        name: "Fire Features",
+        slug: "top-view",
+        name: "Top View",
         cover: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&auto=format&fit=crop",
         images: Array(8).fill("https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900")
       },

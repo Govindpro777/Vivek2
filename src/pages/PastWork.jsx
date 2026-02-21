@@ -24,31 +24,48 @@ export default function PastWork() {
         </div>
       </section>
 
-      <section className="section-padding">
+      <section className="section-padding bg-[#e9ede6]">
         <div className="container-custom">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
             {pastWorkData.map((project) => (
-              <Link
-                key={project.slug}
-                to={`/past-work/${project.slug}`}
-                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500"
-              >
-                <img
-                  src={project.coverImage}
-                  alt={project.name}
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8">
-                  <h3 className="font-display text-3xl font-bold text-white mb-2">
+              <div key={project.slug} className="group">
+
+                {/* Image Card */}
+                <Link
+                  to={`/past-work/${project.slug}`}
+                  className="relative block overflow-hidden rounded-2xl"
+                >
+                  <img
+                    src={project.coverImage}
+                    alt={project.name}
+                    className="w-full h-auto object-cover transition duration-700 group-hover:scale-105"
+                  />
+
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+                    <span className="text-accent font-semibold text-lg tracking-wide">
+                      VIEW PROJECT →
+                    </span>
+                  </div>
+                </Link>
+
+                {/* Text Below Image */}
+                <div className="text-center mt-6">
+                  <p className="text-md uppercase text-primary">
+                    {project.projectno}
+                  </p>
+                  <h3 className="font-display text-2xl text-black font-semibold">
                     {project.name}
                   </h3>
-                  <p className="text-white/80 text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    View Gallery →
+                  <p className="italic text-gray-600">
+                    {project.images.length} images
                   </p>
                 </div>
-              </Link>
+
+              </div>
             ))}
+
           </div>
         </div>
       </section>
