@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, ArrowRight } from 'lucide-react';
-import galleryPavers from '@/assets/gallery-pavers.jpg';
 
 const features = [
   'Expert landscape design & planning',
@@ -20,7 +19,7 @@ const AboutPreview = () => {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={galleryPavers}
+                src= "/assets/gallery-pavers.jpg"
                 alt="NX Level Landscaping premium hardscape work"
                 className="w-full h-[500px] object-cover"
               />
