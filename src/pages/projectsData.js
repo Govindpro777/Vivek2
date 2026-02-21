@@ -1,4 +1,4 @@
-import Project1 from "@/assets/DAY1/project1.jpeg"
+import Project1 from "@/assets/Day1/project1.jpeg"
 
 export const projectsData = [
   {
