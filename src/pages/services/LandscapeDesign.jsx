@@ -12,9 +12,9 @@ const LandscapeDesign = () => {
   ];
 
   return (
-    <main className="pt-32 pb-20">
+    <main className="pt-12 md:pt-32 pb-20 px-6 bg-primary/5">
       {/* Hero Section */}
-      <section className="bg-primary/5 py-16">
+      <section className=" py-16">
         <div className="container-custom">
           <Link to="/services" className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all mb-6">
             <ArrowLeft size={20} />
