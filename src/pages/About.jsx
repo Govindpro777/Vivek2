@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { CheckCircle, Award, Users, Target, ArrowRight } from 'lucide-react';
 import heroImage from '@/assets/hero.jpeg';
+import high from '@/assets/high.jpeg';
 
 const values = [
   {
@@ -176,7 +177,7 @@ const About = () => {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/assets/Day4/24.jpeg"
+                  src={high}
                   alt="Beautiful backyard transformation"
                   className="w-full h-[500px] object-cover"
                 />

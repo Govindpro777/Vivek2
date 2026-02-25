@@ -39,7 +39,7 @@ const LandscapeLighting = () => {
             </div>
             <div className="relative">
               <img
-                src="/assets/Day6/project6.jpeg"
+                src="/assets/Day3/project3.jpeg"
                 alt="Landscape Lighting"
                 className="rounded-2xl shadow-2xl"
               />
