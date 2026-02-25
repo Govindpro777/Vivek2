@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { pastWorkData } from "./pastWorkData"
-import heroImage from "@/assets/hero-landscape.jpg"
+import heroImage from "@/assets/hero.jpeg"
 
 export default function PastWork() {
   return (

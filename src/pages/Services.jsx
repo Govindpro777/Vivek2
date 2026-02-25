@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Compass, Hammer, Trees, Lightbulb, Umbrella, Flame, Footprints, ArrowRight, Grid3X3 } from 'lucide-react';
-import heroImage from '@/assets/hero-landscape.jpg';
+import heroImage from '@/assets/hero.jpeg';
 
 const services = [
   {
@@ -146,10 +146,10 @@ const Services = () => {
           <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-8">
             Ready to get started? Contact us today for a free consultation and estimate.
           </p>
-          <Link to="/contact" className="btn-hero inline-flex items-center gap-2">
+          <a href="/contact" className="btn-hero inline-flex items-center gap-2">
             Start Your Project
             <ArrowRight size={20} />
-          </Link>
+          </a>
         </div>
       </section>
     </>

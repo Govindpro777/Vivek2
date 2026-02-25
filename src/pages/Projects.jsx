@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { categoriesData } from './categoriesData'; // adjust path
-import heroImage from '@/assets/hero-landscape.jpg';
+import heroImage from '@/assets/hero.jpeg';
 
 export default function ServiceGallery() {
 	return (

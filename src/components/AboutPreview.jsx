@@ -19,7 +19,7 @@ const AboutPreview = () => {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/assets/gallery-pavers.jpg"
+                src="/assets/Day4/24.jpeg"
                 alt="NX Level Landscaping premium hardscape work"
                 className="w-full h-[500px] object-cover"
               />

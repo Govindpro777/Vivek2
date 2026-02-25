@@ -68,10 +68,10 @@ const HardscapePavers = () => {
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
             Let us create stunning hardscape features that will last for decades.
           </p>
-          <Link to="/contact" className="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors inline-flex items-center gap-2">
+          <a href="/contact" className="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors inline-flex items-center gap-2">
             Start Your Project
             <ArrowRight size={20} />
-          </Link>
+          </a>
         </div>
       </section>
     </main>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, X } from 'lucide-react';
-import heroImage from '@/assets/hero-landscape.jpg';
+import heroImage from '@/assets/hero.jpeg';
 import galleryPavers from '@/assets/gallery-pavers.jpg';
 import galleryTurf from '@/assets/gallery-turf.jpg';
 import galleryLighting from '@/assets/gallery-lighting.jpg';
@@ -70,11 +70,10 @@ const Gallery = () => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all ${
-                  activeCategory === category
+                className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all ${activeCategory === category
                     ? 'bg-primary text-primary-foreground'
                     : 'bg-secondary text-secondary-foreground hover:bg-primary/10'
-                }`}
+                  }`}
               >
                 {category}
               </button>

@@ -28,8 +28,8 @@ const TrellisesArbors = () => {
                 Trellises & <span className="heading-accent">Arbors</span>
               </h1>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                Add vertical interest and natural beauty to your landscape with custom trellises and 
-                arbors. These structures create stunning focal points while providing support for 
+                Add vertical interest and natural beauty to your landscape with custom trellises and
+                arbors. These structures create stunning focal points while providing support for
                 climbing plants and adding privacy to your outdoor space.
               </p>
               <Link to="/contact" className="btn-hero inline-flex items-center gap-2">
@@ -38,9 +38,9 @@ const TrellisesArbors = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800" 
-                alt="Trellises and Arbors" 
+              <img
+                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800"
+                alt="Trellises and Arbors"
                 className="rounded-2xl shadow-2xl"
               />
             </div>
@@ -68,10 +68,10 @@ const TrellisesArbors = () => {
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
             Create stunning garden structures that grow more beautiful over time.
           </p>
-          <Link to="/contact" className="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors inline-flex items-center gap-2">
+          <a href="/contact" className="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors inline-flex items-center gap-2">
             Start Your Project
             <ArrowRight size={20} />
-          </Link>
+          </a>
         </div>
       </section>
     </main>

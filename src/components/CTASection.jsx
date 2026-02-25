@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Phone } from 'lucide-react';
-import heroImage from '@/assets/hero-landscape.jpg';
+import heroImage from '@/assets/hero.jpeg';
 
 const CTASection = () => {
   return (
