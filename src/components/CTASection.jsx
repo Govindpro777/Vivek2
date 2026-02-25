@@ -22,10 +22,10 @@ const CTASection = () => {
           Let's elevate your outdoor living space. Get a free consultation and discover how we can transform your property.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link to="/contact" className="btn-hero inline-flex items-center justify-center gap-2">
+          <a href="/contact" className="btn-hero inline-flex items-center justify-center gap-2">
             Request a Free Estimate
             <ArrowRight size={20} />
-          </Link>
+          </a>
           <a
             href="tel:+17025551234"
             className="btn-outline-hero inline-flex items-center justify-center gap-2"

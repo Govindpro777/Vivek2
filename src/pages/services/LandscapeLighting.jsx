@@ -28,8 +28,8 @@ const LandscapeLighting = () => {
                 Landscape <span className="heading-accent">Lighting</span>
               </h1>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                Transform your property after dark with professional landscape lighting. Our custom 
-                lighting designs highlight your home's best features, improve safety, and create 
+                Transform your property after dark with professional landscape lighting. Our custom
+                lighting designs highlight your home's best features, improve safety, and create
                 the perfect ambiance for outdoor entertaining.
               </p>
               <Link to="/contact" className="btn-hero inline-flex items-center gap-2">
@@ -38,9 +38,9 @@ const LandscapeLighting = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800" 
-                alt="Landscape Lighting" 
+              <img
+                src="/assets/Day6/project6.jpeg"
+                alt="Landscape Lighting"
                 className="rounded-2xl shadow-2xl"
               />
             </div>

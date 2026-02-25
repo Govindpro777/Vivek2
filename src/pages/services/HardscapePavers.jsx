@@ -28,8 +28,8 @@ const HardscapePavers = () => {
                 Hardscape & <span className="heading-accent">Pavers</span>
               </h1>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                Elevate your outdoor living with premium paver installations and custom hardscape solutions. 
-                From elegant driveways to stunning patios, we use only the highest quality materials and 
+                Elevate your outdoor living with premium paver installations and custom hardscape solutions.
+                From elegant driveways to stunning patios, we use only the highest quality materials and
                 craftsmanship to create lasting beauty.
               </p>
               <Link to="/contact" className="btn-hero inline-flex items-center gap-2">
@@ -38,9 +38,9 @@ const HardscapePavers = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" 
-                alt="Hardscape and Pavers" 
+              <img
+                src="/assets/Day3/19.jpeg"
+                alt="Hardscape and Pavers"
                 className="rounded-2xl shadow-2xl"
               />
             </div>

@@ -23,7 +23,7 @@ const values = [
 
 const stats = [
   { number: '500+', label: 'Projects Completed' },
-  { number: '15+', label: 'Years Experience' },
+  { number: '25+', label: 'Years Experience' },
   { number: '100%', label: 'Satisfaction Rate' },
   { number: '50+', label: '5-Star Reviews' },
 ];
@@ -82,7 +82,7 @@ const About = () => {
                   trellises, steps, walkways, outdoor kitchens, fireplaces, and complete backyard transformations.
                 </p>
                 <p>
-                  Based in Henderson, Nevada, we've been serving the Las Vegas Valley for over 15 years,
+                  Based in Henderson, Nevada, we've been serving the Las Vegas Valley for over 25 years,
                   building a reputation for quality craftsmanship, innovative design, and exceptional customer service.
                 </p>
                 <p>
@@ -168,10 +168,10 @@ const About = () => {
                   </div>
                 ))}
               </div>
-              <Link to="/contact" className="btn-hero inline-flex items-center gap-2">
+              <a href="/contact" className="btn-hero inline-flex items-center gap-2">
                 Get Started Today
                 <ArrowRight size={20} />
-              </Link>
+              </a>
             </div>
 
             <div className="relative">

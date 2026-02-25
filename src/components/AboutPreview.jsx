@@ -19,14 +19,14 @@ const AboutPreview = () => {
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src= "/assets/gallery-pavers.jpg"
+                src="/assets/gallery-pavers.jpg"
                 alt="NX Level Landscaping premium hardscape work"
                 className="w-full h-[500px] object-cover"
               />
             </div>
             {/* Floating Badge */}
             <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground px-8 py-6 rounded-xl shadow-xl">
-              <p className="font-display text-4xl font-bold">15+</p>
+              <p className="font-display text-4xl font-bold">25+</p>
               <p className="text-sm font-medium">Years of Excellence</p>
             </div>
           </div>
@@ -41,8 +41,8 @@ const AboutPreview = () => {
               <span className="heading-accent">One Project at a Time</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              NX Level Landscaping takes every project to the next level with expert landscape design, 
-              high-end paver and hardscape work, turf installation, outdoor lighting, patio covers, 
+              NX Level Landscaping takes every project to the next level with expert landscape design,
+              high-end paver and hardscape work, turf installation, outdoor lighting, patio covers,
               trellises, steps, walkways, outdoor kitchens, fireplaces, and complete backyard transformations.
             </p>
 
@@ -55,11 +55,10 @@ const AboutPreview = () => {
                 </div>
               ))}
             </div>
-
-            <Link to="/about" className="btn-hero inline-flex items-center gap-2">
+            <a href="/about" className="btn-hero inline-flex items-center gap-2">
               Learn More About Us
               <ArrowRight size={20} />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

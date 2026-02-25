@@ -74,23 +74,27 @@ const ServicesPreview = () => {
               <p className="text-muted-foreground mb-4 leading-relaxed">
                 {service.description}
               </p>
-              <Link
-                to={service.slug}
+              <a
+                href={service.slug}
                 className="inline-flex items-center gap-2 text-primary font-medium hover:gap-3 transition-all"
               >
                 Learn More
                 <ArrowRight size={16} />
-              </Link>
+              </a>
             </div>
           ))}
         </div>
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <Link to="/services" className="btn-hero inline-flex items-center gap-2">
+          {/* <Link to="/services" className="btn-hero inline-flex items-center gap-2">
             View All Services
             <ArrowRight size={20} />
-          </Link>
+          </Link> */}
+          <a href="/services" className="btn-hero inline-flex items-center gap-2">
+            View All Services
+            <ArrowRight size={20} />
+          </a>
         </div>
       </div>
     </section>

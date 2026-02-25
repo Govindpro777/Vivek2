@@ -8,7 +8,7 @@ const TurfInstallation = () => {
     'Pet-friendly options',
     'Sports turf installations',
     'Putting greens',
-    '15+ year warranty coverage',
+    '25+ year warranty coverage',
   ];
 
   return (
@@ -28,8 +28,8 @@ const TurfInstallation = () => {
                 Turf <span className="heading-accent">Installation</span>
               </h1>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                Enjoy a lush, green lawn year-round without the maintenance hassle. Our high-quality 
-                artificial turf installations provide the perfect solution for Henderson's desert climate, 
+                Enjoy a lush, green lawn year-round without the maintenance hassle. Our high-quality
+                artificial turf installations provide the perfect solution for Henderson's desert climate,
                 saving water while delivering stunning curb appeal.
               </p>
               <Link to="/contact" className="btn-hero inline-flex items-center gap-2">
@@ -38,9 +38,9 @@ const TurfInstallation = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1558635924-ef44f0bbd6e1?w=800" 
-                alt="Turf Installation" 
+              <img
+                src="/assets/Day3/22.jpeg"
+                alt="Turf Installation"
                 className="rounded-2xl shadow-2xl"
               />
             </div>

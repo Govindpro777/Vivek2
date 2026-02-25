@@ -29,8 +29,8 @@ const LandscapeDesign = () => {
                 Landscape <span className="heading-accent">Design</span>
               </h1>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                Transform your outdoor space with our creative, functional, and modern landscape designs. 
-                We work closely with you to understand your vision and create a customized plan that 
+                Transform your outdoor space with our creative, functional, and modern landscape designs.
+                We work closely with you to understand your vision and create a customized plan that
                 maximizes your property's potential while reflecting your personal style.
               </p>
               <Link to="/contact" className="btn-hero inline-flex items-center gap-2">
@@ -39,9 +39,9 @@ const LandscapeDesign = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800" 
-                alt="Landscape Design" 
+              <img
+                src="/assets/Day4/6.jpeg"
+                alt="Landscape Design"
                 className="rounded-2xl shadow-2xl"
               />
             </div>

@@ -40,13 +40,16 @@ const Hero = () => {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <Link to="/contact" className="btn-hero inline-flex items-center justify-center gap-2">
+            <a href="/contact" className="btn-hero inline-flex items-center justify-center gap-2">
               Get a Free Quote
               <ArrowRight size={20} />
-            </Link>
-            <Link to="/service-gallery" className="btn-outline-hero inline-flex items-center justify-center">
-              View Our Work
-            </Link>
+            </a>
+            <a href="/past-work" className="btn-outline-hero inline-flex items-center justify-center">
+              Past Work
+            </a>
+            <a href="/service-gallery" className="btn-outline-hero inline-flex items-center justify-center">
+              Services Gallery
+            </a>
           </div>
 
           {/* Trust Indicators */}
@@ -56,7 +59,7 @@ const Hero = () => {
               <p className="text-primary-foreground/70 text-sm">Projects Completed</p>
             </div>
             <div>
-              <p className="font-display text-3xl md:text-4xl font-bold text-accent">15+</p>
+              <p className="font-display text-3xl md:text-4xl font-bold text-accent">25+</p>
               <p className="text-primary-foreground/70 text-sm">Years Experience</p>
             </div>
             <div>

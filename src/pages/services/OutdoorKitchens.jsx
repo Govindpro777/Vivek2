@@ -28,8 +28,8 @@ const OutdoorKitchens = () => {
                 Outdoor Kitchens & <span className="heading-accent">Fire Features</span>
               </h1>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                Take outdoor entertaining to the next level with custom kitchens and fire features. 
-                From fully equipped cooking stations to cozy fire pits, we create the perfect 
+                Take outdoor entertaining to the next level with custom kitchens and fire features.
+                From fully equipped cooking stations to cozy fire pits, we create the perfect
                 gathering spaces for family and friends.
               </p>
               <Link to="/contact" className="btn-hero inline-flex items-center gap-2">
@@ -38,9 +38,9 @@ const OutdoorKitchens = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800" 
-                alt="Outdoor Kitchens" 
+              <img
+                src="/assets/Day5/project5.jpeg"
+                alt="Outdoor Kitchens"
                 className="rounded-2xl shadow-2xl"
               />
             </div>

@@ -28,8 +28,8 @@ const PatioCovers = () => {
                 Patio Covers & <span className="heading-accent">Shade Structures</span>
               </h1>
               <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                Beat the Nevada heat with custom-built patio covers and shade structures. Our solutions 
-                provide year-round comfort while adding architectural interest and value to your 
+                Beat the Nevada heat with custom-built patio covers and shade structures. Our solutions
+                provide year-round comfort while adding architectural interest and value to your
                 outdoor living space.
               </p>
               <Link to="/contact" className="btn-hero inline-flex items-center gap-2">
@@ -38,9 +38,9 @@ const PatioCovers = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" 
-                alt="Patio Covers" 
+              <img
+                src="/assets/Day6/project6.jpeg"
+                alt="Patio Covers"
                 className="rounded-2xl shadow-2xl"
               />
             </div>
