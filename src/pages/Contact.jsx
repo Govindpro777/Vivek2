@@ -100,7 +100,7 @@ const Contact = () => {
                   href="tel:+17023486380"
                   className="text-muted-foreground text-sm hover:text-primary transition-colors"
                 >
-                  (702)-348-6380
+                  +1 (702)-348-6380
                 </a>
               </div>
 

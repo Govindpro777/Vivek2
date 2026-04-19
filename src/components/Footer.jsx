@@ -40,9 +40,9 @@ const Footer = () => {
               <a href="#" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
+              {/* <a href="#" className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors">
                 <Youtube size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -71,8 +71,8 @@ const Footer = () => {
               </li> */}
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-accent flex-shrink-0" />
-                <a href="tel:+7023486380" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  (702)-348-6380
+                <a href="tel:+17023486380" className="text-primary-foreground/80 hover:text-accent transition-colors">
+                 +1 (702)-348-6380
                 </a>
               </li>
               <li className="flex items-center gap-3">

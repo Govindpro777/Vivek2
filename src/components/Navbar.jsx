@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="flex items-center gap-6">
             <a href="tel:+17025551234" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Phone size={14} />
-              (702)-348-6380
+             +1 (702)-348-6380
             </a>
             <a href="mailto:quotes@nxlevellandscaping.com" className="flex items-center gap-2 hover:text-accent transition-colors">
               <Mail size={14} />
